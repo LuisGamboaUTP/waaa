@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="estilos/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Inicio de Sesión</h2>
+        <form action="dashboard.html" method="POST" id="login-form">
+            <div class="input-icon">
+                <i class="fas fa-envelope"></i>
+                <label for="login-email">Correo Electrónico:</label>
+                <input type="email" id="login-email" name="email" required>
+            </div>
+            <div class="input-icon">
+                <i class="fas fa-lock"></i>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required>
+                <span class="toggle-password" onclick="togglePassword('login-password')"><i class="fas fa-eye"></i></span>
+            </div>
+            <button type="submit" id="login-button">Iniciar Sesión</button>
+            <div class="social-login">
+                <p>O inicia sesión con:</p>
+                <button type="button" class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                <button type="button" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+            </div>
+            <p><a href="recuperar_contraseña.html">¿Olvidaste tu contraseña?</a></p>
+            <p>¿No tienes una cuenta? <a href="registro.html">Crear Cuenta</a></p>
+            <p><a href="index.html" class="back-home">Volver al Inicio</a></p>
+        </form>
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad de la contraseña
+        function togglePassword(id) {
+            const input = document.getElementById(id);
+            const icon = input.nextElementSibling.querySelector('i');
+            const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+            input.setAttribute('type', type);
+            icon.classList.toggle('fa-eye-slash');
+            icon.classList.toggle('fa-eye');
+        }
+
+        // Validación y alerta con SweetAlert al enviar el formulario
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío inmediato
+
+            const email = document.getElementById("login-email").value;
+            const password = document.getElementById("login-password").value;
+
+            // Mostrar alerta de validación
+            if (email && password) {
+                Swal.fire({
+                    title: '¡Inicio de sesión exitoso!',
+                    text: 'Serás redirigido a tu dashboard.',
+                    icon: 'success',
+                    confirmButtonText: 'Continuar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirigir al dashboard después de la confirmación
+                        window.location.href = "index.html";
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Por favor completa todos los campos.',
+                    icon: 'error',
+                    confirmButtonText: 'Reintentar'
+                });
+            }
+        });
+    </script>
+</body>
+</html>

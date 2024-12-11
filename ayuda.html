@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayuda & Soporte</title>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/ayuda.css">
+    <!-- Fuente Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    
+
+</head>
+
+<body>
+
+    <!-- Navbar Principal con elementos integrados -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+
+            <!-- Menú desplegable de categorías -->
+            <div class="shop">
+                <select aria-describedby="searchDropdownDescription"
+                    class="nav-search-dropdown searchSelect nav-progressive-attribute nav-progressive-search-dropdown"
+                    id="searchDropdownBox" name="url" title="Buscar en" onchange="redirectToCategory()">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <!-- Opción de selección inicial -->
+                    <option value="celulares.html">Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+                    <option value="televisores.html">Televisores</option>
+                    <option value="productosLimpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+
+
+            <!-- Barra de búsqueda -->
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <!-- Botón de búsqueda -->
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <!-- Opción de búsqueda avanzada -->
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <!-- Botón de menú hamburguesa (visible en móviles) -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Sección Derecha: Enlaces de la antigua navbar superior -->
+        <div class="right-section">
+            <ul class="menu">
+                <!-- Menú Desplegable para "Bienvenido!" -->
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Otros enlaces -->
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+
+                            <!-- AQUI SE VISUALIZA TODO LO QUE ESTA EN CARRITO LUEGO DE DARLE CLICK AL ICON CARRITO -->
+
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+          
+
+
+        </ul>
+    </nav>
+
+    <section id="main-content" class="section hero Buscador-Home">
+        <div class="hero-inner">
+            <style>
+                #Headline_Home_a {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 18px;
+                    margin: 0;
+                }
+
+                @media only screen and (min-width: 767px) {
+                    #Headline_Home_a {
+                        font-size: 26px;
+                        line-height: 20px;
+                        margin: 0 0 20px;
+                    }
+                }
+
+                #Headline_Home_b {
+                    font-size: 38px;
+                    line-height: 42px;
+                    text-align: center;
+                    color: #fff;
+                    margin: 0;
+                    font-weight: bold;
+                    padding: 0 0 20px;
+                }
+
+                @media only screen and (min-width: 767px) {
+                    #Headline_Home_b {
+                        font-size: 45px;
+                        line-height: 26px;
+                        margin: 0;
+                        padding: 0 0 35px;
+                    }
+                }
+            </style>
+            <h1 id="Headline_Home_a">Centro de Ayuda </h1>
+            <h2 id="Headline_Home_b">¿En qué podemos ayudarte?</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+                class="search-icon homePage" aria-hidden="true">
+                <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+            </svg>
+            <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off"
+                action="/hc/es/search" accept-charset="UTF-8" method="get">
+                <input name="utf8" type="hidden" value="✓" autocomplete="off">
+                <zd-autocomplete-announcement id="28e32544-5b68-405f-a4ff-8e0ea5538467" aria-live="polite"
+                    role="listbox"></zd-autocomplete-announcement>
+                <input type="search" name="query" id="query" placeholder="Buscar" autocomplete="off" aria-label="Search"
+                    aria-autocomplete="both" aria-expanded="false" role="combobox"
+                    aria-owns="28e32544-5b68-405f-a4ff-8e0ea5538467">
+            </form>
+        </div>
+        <style>
+            .shortcuts {
+                position: relative;
+                top: 40px;
+            }
+
+            @media only screen and (min-width: 520px) {
+                .shortcuts {
+                    top: 90px;
+                }
+            }
+
+            @media only screen and (min-width: 767px) {
+                .shortcuts {
+                    top: 40px;
+                }
+            }
+
+            .shortcuts-links li.seguimiento {
+                display: inline-block;
+                margin: 0;
+                padding: 0 2px;
+                font-size: 14px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+
+            .shortcuts-links li.seguimiento p {
+                color: #fff;
+            }
+
+            .shortcuts-links .seguimiento a.blocks-item-link {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: 1px solid #fff;
+                padding: 5px 10px;
+                margin: 0;
+                color: #fff;
+            }
+
+            .shortcuts-links .seguimiento a.blocks-item-link:hover {
+                background: rgba(255, 255, 255, 0.17);
+            }
+        </style>
+        <div class="shortcuts">
+            <ul class="shortcuts-links">
+                <li class="item seguimiento">
+                    <p>Más buscados</p>
+                </li>
+                <li class="item seguimiento">
+                    <a href="#" class="blocks-item-link">
+                        <span class="link">Canales de atención</span>
+                    </a>
+                </li>
+                <li class="item seguimiento">
+                    <a href="#" class="blocks-item-link">
+                        <span class="link">Seguimiento de compra</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="container Categorias-Home">
+        <section class="section knowledge-base">
+            <!-- <h2 class="visibility-hidden">Categorías</h2> -->
+
+            <!-- COMIENZO CATEGORIAS DESTACADAS -->
+            <style>
+                .Categorias-Home section.categories li.blocks-item.whatsapp,
+                .Categorias-Home section.categories li.blocks-item.covid-19,
+                .Categorias-Home section.categories li.blocks-item.mensaje-directo {
+                    border: none;
+                }
+
+                /* Iconos Home */
+                .Categorias-Home section.categories li.blocks-item.whatsapp a,
+                .Categorias-Home section.categories li.blocks-item.covid-19 a,
+                .Categorias-Home section.categories li.blocks-item.mensaje-directo a {
+                    background-size: 68px !important;
+                    -webkit-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    -o-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                }
+
+                .Categorias-Home section.categories li.blocks-item.whatsapp a:hover,
+                .Categorias-Home section.categories li.blocks-item.mensaje-directo a:hover,
+                .Categorias-Home section.categories li.blocks-item.covid-19 a:hover {
+                    background-size: 80px !important;
+                    -webkit-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    -o-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                }
+
+
+                /* WHATSAPP --------------------------------- */
+                .Categorias-Home section.categories li.blocks-item.whatsapp a {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_whatsapp-icon.svg') 16px 12px no-repeat;
+                    background-color: #cdf2d7;
+                }
+
+                .Categorias-Home section.categories li.blocks-item.whatsapp a:hover {
+                    background-color: #90eba9;
+                }
+
+                li.blocks-item.whatsapp * {
+                    color: #1f964c
+                }
+
+                li.blocks-item.whatsapp a:hover * {
+                    color: #0b7031
+                }
+
+                /* MENSAJE DIRECTO --------------------------------- */
+                .Categorias-Home section.categories li.blocks-item.mensaje-directo a {
+                    background: url(https://home.ripley.cl/assets-styles/iconos_sac/ic_seguimiento.svg) 20px 10px no-repeat;
+                    background-color: #f9e9ff;
+                    border: none;
+                }
+
+                .Categorias-Home section.categories li.blocks-item.mensaje-directo a:hover {
+                    background-color: #efcdfb;
+                }
+
+                li.blocks-item.mensaje-directo:hover * {
+                    color: #6a148e
+                }
+
+
+                /* Youtube Ripley ---------------------------------  */
+                .Categorias-Home section.categories li.blocks-item.covid-19 a {
+                    background: url(https://home.ripley.cl/assets-styles/iconos_sac/ic_solicitud.svg) 16px 12px no-repeat;
+                    background-color: #EBEEF7;
+                    border: none;
+                }
+
+                li.blocks-item.covid-19 * {
+                    color: #18399D
+                }
+
+                .Categorias-Home section.categories li.blocks-item.covid-19 a:hover {
+                    background-color: #CED5EB;
+                }
+
+                li.blocks-item.covid-19:hover * {
+                    color: #18399D
+                }
+            </style>
+            <section class="categories blocks mensaje-directo-category">
+                <ul class="blocks-list">
+                    <!-- WHATSAPP -->
+                    <li class="blocks-item whatsapp">
+                        <a href="https://wa.me/51989992109" class="blocks-item-link whatsapp">
+                            <span class="blocks-item-title">Escríbenos por WhatsApp</span>
+                            <span class="blocks-item-description">Podrás conocer y resolver el estado de tus compras,
+                                despachos o servicios, además de otras consultas.</span>
+                        </a>
+                    </li>
+
+                    <!-- SOLICITUD -->
+                    <li class="blocks-item mensaje-directo">
+                        <a href="carro.html" target="_blank" class="blocks-item-link mensaje-directo-link">
+                            <span class="blocks-item-title">Sigue tu pedido en carrito de compras</span>
+                            <span class="blocks-item-description">Encuentra tu pedido de una manera sencilla.</span>
+                        </a>
+                    </li>
+
+                    <!--CONOCE CANALES DE ATENCIÓN-->
+                    <li class="blocks-item covid-19">
+                        <a href="Atencion.html" target="_blank" class="blocks-item-link">
+                            <span class="blocks-item-title">Conoce nuestros canales de atención</span>
+                            <span class="blocks-item-description">Aqui te ayudamos con gusto.</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+
+
+            <!-- FIN CATEGORIAS DESTACADAS -->
+
+
+            <style>
+                #Headline_Categoria {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 21px;
+                    margin: 0;
+                    padding: 0 0 40px;
+                    color: #6a148e;
+                    line-height: 24px;
+                }
+
+                @media only screen and (min-width:767px) {
+                    #Headline_Categoria {
+                        font-size: 26px;
+                        line-height: 16px;
+                        padding: 20px 0;
+                        margin: 0 0 20px;
+                    }
+                }
+            </style>
+            <h2 id="Headline_Categoria">Elige la categoría disponible para la pregunta que tengas</h2>
+
+
+
+
+
+            <!-- CATEGORIAS ------------------------------------ -->
+            <!-- modifica titulo -->
+            <style>
+                /* Modifica titulo */
+                .blocks-item-title {
+                    font-size: 25px;
+                }
+
+                /* Iconos Home */
+                .Categorias-Home section.categories li.blocks-item>a {
+                    background-size: 68px !important;
+                    -webkit-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    -o-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                }
+
+                .Categorias-Home section.categories li.blocks-item>a:hover {
+                    background-size: 80px !important;
+                    background-color: #7c349c;
+                    -webkit-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    -o-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                }
+
+                /* Icono Preguntas Frecuentes */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004338951-Preguntas-Frecuentes'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_FAQ.svg') 18px 15px no-repeat;
+                }
+
+                /* Icono Canales de Atención */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004337392-Compras-en-Ripley-com'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_suscripciones.svg') 15px 15px no-repeat;
+                }
+
+                /* Icono Tarjeta Ripley */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004337372-Tarjeta-Ripley'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_TR.svg') 18px 15px no-repeat;
+                }
+
+                /* Icono RipleyPuntosGo */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/13691879502221-Ripley-Puntos-Go'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_rpg.svg') 15px 15px no-repeat;
+                }
+
+                /* Tienda Física */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004384531-Ripley-Tienda-F%C3%ADsica'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_tiendas.svg') 18px 15px no-repeat;
+                }
+
+                /* Icono Garantias Ripley */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004276851-Garant%C3%ADas-Ripley'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_garantia.svg') 15px 15px no-repeat;
+                }
+
+                /* Bienvenido a R Seller */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360004337352--Bienvenido-a-R-Sellers'] {
+                    background: url('https://home.ripley.cl/assets-styles/iconos_sac/ic_solicitud.svg') 15px 15px no-repeat;
+                }
+
+                /* Icono Ripley App */
+                .Categorias-Home section.categories li.blocks-item>a[href='/hc/es/categories/360006561332-Ripley-App'] {
+                    background: url(https://home.ripley.cl/assets-styles/iconos_sac/rphone_white.svg) 15px 15px no-repeat;
+                }
+
+
+
+                /* Caja texto */
+                a.blocks-item-link {
+                    padding: 20px 30px 20px 105px;
+                }
+
+                a.blocks-item-link .blocks-item-title {
+                    text-align: left;
+                    line-height: 24px;
+                }
+
+                a.blocks-item-link .blocks-item-description {
+                    text-align: left;
+                }
+
+                .blocks-item:hover *,
+                .blocks-item:focus *,
+                .blocks-item:active * {}
+
+                @media only screen and (max-width:1215px) and (min-width:740px) {
+                    .Categorias-Home section.categories li.blocks-item:nth-child(3) {
+                        background-position: 10px 0px;
+                    }
+                }
+            </style>
+
+
+
+            <section class="categories blocks">
+                <ul class="blocks-list">
+
+
+                    <li class="blocks-item">
+                        <a href="#" class="blocks-item-link">
+                            <span class="blocks-item-title">Preguntas Frecuentes</span>
+                            <span class="blocks-item-description">Explora los temas de ayuda más consultados por
+                                nuestros clientes.</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="blocks-item">
+                        <a href="#" class="blocks-item-link">
+                            <span class="blocks-item-title">Tarjeta</span>
+                            <span class="blocks-item-description">Conoce información sobre tu tarjeta y
+                                beneficios a los que puedes acceder.</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="blocks-item">
+                        <a href="#" class="blocks-item-link">
+                            <span class="blocks-item-title">Nuestra App</span>
+                            <span class="blocks-item-description">¡Descubre una forma emocionante de disfrutar tus
+                                compras por la app! </span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="blocks-item">
+                        <a href="#" class="blocks-item-link">
+                            <span class="blocks-item-title">Garantías </span>
+                            <span class="blocks-item-description">Accede a información de Garantía legal y Garantía
+                                Extendida , también otras marcas.</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="blocks-item">
+                        <a href="#" class="blocks-item-link">
+                            <span class="blocks-item-title">Puntos por cada compra</span>
+                            <span class="blocks-item-description">Infórmate sobre el programa y conoce todo lo que
+                                necesitas saber acerca de tus Puntos Go</span>
+                        </a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+
+            </section>
+            <!-- FIN CATEGORIAS ------------------------------------ -->
+
+        </section>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="javascript/javascript.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

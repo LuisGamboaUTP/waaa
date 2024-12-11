@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Carrito</title>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/ayuda.css">
+    <!-- Fuente Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar Principal con elementos integrados -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+
+            <!-- Menú desplegable de categorías -->
+            <div class="shop">
+                <select aria-describedby="searchDropdownDescription"
+                    class="nav-search-dropdown searchSelect nav-progressive-attribute nav-progressive-search-dropdown"
+                    id="searchDropdownBox" name="url" title="Buscar en" onchange="redirectToCategory()">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <!-- Opción de selección inicial -->
+                    <option value="celulares.html">Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+                    <option value="televisores.html">Televisores</option>
+                    <option value="productosLimpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+
+
+            <!-- Barra de búsqueda -->
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <!-- Botón de búsqueda -->
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <!-- Opción de búsqueda avanzada -->
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <!-- Botón de menú hamburguesa (visible en móviles) -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Sección Derecha: Enlaces de la antigua navbar superior -->
+        <div class="right-section">
+            <ul class="menu">
+                <!-- Menú Desplegable para "Bienvenido!" -->
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Otros enlaces -->
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+                <li id="menu-item-bell" class="menu-item">
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li id="menu-item-cart" class="menu-item">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+            <li><a href="#">Mouse Gamer</a></li>
+           
+
+        </ul>
+    </nav>
+
+
+    <body>
+        <!-- Navbar Principal con elementos integrados -->
+        <div class="navbar2">
+            <!-- ... código de la navbar ... -->
+        </div>
+    
+        <!-- Nuevo Div con el mensaje del carrito vacío -->
+        <div class="carrito-vacio">
+            <div class="carrito-icono">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p>Tu Carro está vacío</p>
+            <p>Inicia sesión para ver los productos que habías guardado en tu Carro.</p>
+            <p>
+                <a href="login.html" class="btn-iniciar-sesion">
+                    Iniciar Sesión
+                </a>
+            </p>
+
+
+            
+            <p class="registrate">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        </div>
+    
+        <!-- ... resto del contenido ... -->
+    </body>
+    
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

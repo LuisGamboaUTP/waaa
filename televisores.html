@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Archivo CSS personalizado -->
+<link rel="stylesheet" href="estilos/styles.css">
+<!-- Fuente Roboto -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="estilos/CategoriaEstilos.css">
+</head>
+
+<body>
+
+    <!-- Navbar Principal -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+            <div class="shop">
+                <select aria-describedby="searchDropdownDescription"
+                    class="nav-search-dropdown searchSelect nav-progressive-attribute nav-progressive-search-dropdown"
+                    id="searchDropdownBox" name="url" title="Buscar en" onchange="redirectToCategory()">
+                    <option value="" disabled selected>televisores</option>
+                    <option value="celulares.html">Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+
+                    <option value="limpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="right-section">
+            <ul class="menu">
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+
+                            <!-- AQUI SE VISUALIZA TODO LO QUE ESTA EN CARRITO LUEGO DE DARLE CLICK AL ICON CARRITO -->
+
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+          
+
+
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal con Cuadrícula de Productos -->
+    <main class="main-content">
+        <h1>Búsqueda de Televisores</h1>
+
+        <hr>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/130167180_1/w=800,h=800,fit=pad"
+                    alt="TV 1" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> Smart TV 4k UHD </h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/130167180_1/w=800,h=800,fit=pad">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/17245032-1000-1000/20356230.jpg?v=638411022149670000"
+                    alt="TV 2" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> LG LED 55</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 400</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://oechsle.vteximg.com.br/arquivos/ids/17245032-1000-1000/20356230.jpg?v=638411022149670000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="https://pesonyb2c.vtexassets.com/arquivos/ids/224001/GENBA_K-55S30_01_Main_SSO_1000x1000px.jpg?v=638554463778700000"
+                    alt="TV 3" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>SONY BRAVIA 3 "75"</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://pesonyb2c.vtexassets.com/arquivos/ids/224001/GENBA_K-55S30_01_Main_SSO_1000x1000px.jpg?v=638554463778700000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/9922651-1000-1000/imageUrl_2.jpg?v=637938307315500000"
+                    alt="TV 4" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Televisor AOC Led 43</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 250</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://oechsle.vteximg.com.br/arquivos/ids/9922651-1000-1000/imageUrl_2.jpg?v=637938307315500000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/6218969-1000-1000/image-3d09108ccc194f4892c6efc36a26a688.jpg?v=637744433509330000"
+                    alt="TV 5" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>JVC Smart TV 32</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 320</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://oechsle.vteximg.com.br/arquivos/ids/6218969-1000-1000/image-3d09108ccc194f4892c6efc36a26a688.jpg?v=637744433509330000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="https://metroio.vtexassets.com/arquivos/ids/530091-800-auto?v=638521801390230000&width=800&height=auto&aspect=true"
+                    alt="TV 6" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>LG Uhd Tv 55" 4K Thinq</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://metroio.vtexassets.com/arquivos/ids/530091-800-auto?v=638521801390230000&width=800&height=auto&aspect=true">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="https://images.philips.com/is/image/philipsconsumer/021bf098c1cb4ddfb7caaffd007abb10?$pnglarge$&wid=960"
+                    alt="TV 7" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> LED Google TV LED 4K UHD 55</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://images.philips.com/is/image/philipsconsumer/021bf098c1cb4ddfb7caaffd007abb10?$pnglarge$&wid=960">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="https://carsaperupoc.vtexassets.com/arquivos/ids/161029/132220_01.jpg?v=638593359312370000"
+                    alt="TV 8" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> Smart UHD 4K Philips 50</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://carsaperupoc.vtexassets.com/arquivos/ids/161029/132220_01.jpg?v=638593359312370000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/16462678-998-998/image-0.jpg?v=638327366279800000"
+                    alt="TV 9" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> SONY BRAVIA X85K 4K Ultra HD</h2>
+                <p>Descripción breve del Televisor.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://www.sony.com.pe/image/04575d5d3e3ace842828cec12600bc7c?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToCategory(select) {
+            const selectedCategory = select.value;
+            if (selectedCategory) {
+                window.location.href = selectedCategory;
+            }
+        }
+    </script>
+    <script src="javascript/javascript.js"></script>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img id="modal-img" class="modal-content" alt="Imagen del Producto">
+    </div>
+</body>
+
+</html>

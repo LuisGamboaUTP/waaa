@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Archivo CSS personalizado -->
+<link rel="stylesheet" href="estilos/styles.css">
+<!-- Fuente Roboto -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="estilos/CategoriaEstilos.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Principal -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+            <!-- Menú desplegable de categorías -->
+            <div class="shop">
+                <select id="searchDropdownBox" title="Buscar en" onchange="redirectToCategory(this)">
+                    <option value="" disabled>Selecciona una categoría</option>
+                    <option value="celulares.html" selected>Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+                    <option value="televisores.html">Televisores</option>
+                    <option value="limpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+            <!-- Barra de búsqueda -->
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <!-- Botón de búsqueda -->
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <!-- Opción de búsqueda avanzada -->
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <!-- Botón de menú hamburguesa (visible en móviles) -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Sección Derecha: Enlaces de la antigua navbar superior -->
+        <div class="right-section">
+            <ul class="menu">
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+
+                            <!-- AQUI SE VISUALIZA TODO LO QUE ESTA EN CARRITO LUEGO DE DARLE CLICK AL ICON CARRITO -->
+
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+           
+
+
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal con Cuadrícula de Productos -->
+    <main class="main-content">
+        <h1>Búsqueda de Celulares</h1>
+
+        <hr>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="imagenes_categoria/s24 ultra.jpg" alt="celular 1" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Celular Samsung s24 Ultra</h2>
+                <p>Descripción breve del Celular .</p>
+                <p class="precio">Precio: S/ 5300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/s24 ultra.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="imagenes_categoria/xiamo redmi.jpg" alt="celular 2" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Celular Xiaomi</h2>
+                <p>Descripción breve del Celular .</p>
+                <p class="precio">Precio: S/ 1400</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/xiamo redmi.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="imagenes_categoria/iphone16promax.jpeg" alt="celular 3" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Iphone 16 Pro Max</h2>
+                <p>Descripción breve del Celular .</p>
+                <p class="precio">Precio: S/ 6300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/iphone16promax.jpeg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="imagenes_categoria/huawei pura.jpg" alt="celular 4" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>huawei pura</h2>
+                <p>Descripción breve del Celular.</p>
+                <p class="precio">Precio: S/ 1750</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/huawei pura.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="imagenes_categoria/Google_Pixel_9_Pro.jpg" alt="celular 5" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Google Pixel 9 Pro</h2>
+                <p>Descripción breve del Celular.</p>
+                <p class="precio">Precio: S/ 4320</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/Google_Pixel_9_Pro.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="imagenes_categoria/Oppo Find X6 Pro.jpeg" alt="celular 6" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Oppo Find X6 Pro</h2>
+                <p>Descripción breve del Celular.</p>
+                <p class="precio">Precio: S/ 2450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/Oppo Find X6 Pro.jpeg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="imagenes_categoria/motorola edge 50 pro.jpg" alt="celular 7" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>Motorola Edge 50 Pro</h2>
+                <p>Descripción breve del Celular.</p>
+                <p class="precio">Precio: S/ 1450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/motorola edge 50 pro.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="imagenes_categoria/lenovo legion celular.jpg" alt="celular 8" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>lenovo legion y70 5g </h2>
+                <p>Descripción breve del Celular .</p>
+                <p class="precio">Precio: S/ 3450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/lenovo legion celular.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="producto">
+                <img src="imagenes_categoria/LG Wing 5G.webp" alt="celular 9" class="producto-img"
+                    onclick="abrirModal(this.src)">
+                <h2>LG Wing 5G</h2>
+                <p>Descripción breve del Celular .</p>
+                <p class="precio">Precio: S/ 1500</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/LG Wing 5G.webp">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToCategory(select) {
+            const selectedCategory = select.value;
+            if (selectedCategory) {
+                window.location.href = selectedCategory;
+            }
+        }
+    </script>
+    <script src="javascript/javascript.js"></script>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img id="modal-img" class="modal-content" alt="Imagen del Producto">
+    </div>
+</body>
+
+</html>

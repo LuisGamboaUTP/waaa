@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audifonos</title>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Fuente Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="estilos/CategoriaEstilos.css">
+    
+
+</head>
+
+<body>
+
+    <!-- Navbar Principal -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+            <!-- Menú desplegable de categorías -->
+            <div class="shop">
+                <select id="searchDropdownBox" title="Buscar en" onchange="redirectToCategory(this)">
+                    <option value="" disabled selected>Audifonos</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="celulares.html">Celulares</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+                    <option value="televisores.html">Televisores</option>
+                    <option value="limpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+            <!-- Barra de búsqueda -->
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <!-- Botón de búsqueda -->
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <!-- Opción de búsqueda avanzada -->
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <!-- Botón de menú hamburguesa (visible en móviles) -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Sección Derecha: Enlaces de la antigua navbar superior -->
+        <div class="right-section">
+            <ul class="menu">
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+
+                            <!-- AQUI SE VISUALIZA TODO LO QUE ESTA EN CARRITO LUEGO DE DARLE CLICK AL ICON CARRITO -->
+
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+           
+
+
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal con Cuadrícula de Productos -->
+    <main class="main-content">
+        <h1>Búsqueda de Audifonos</h1>
+
+        <hr>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto" >
+                <img src="https://www.efe.com.pe/media/catalog/product/p/9/p9_blanco_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                    alt="Over Ear OEM" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> Over Ear OEM</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 300</p>
+                
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://www.efe.com.pe/media/catalog/product/p/9/p9_blanco_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700">Añadir al carrito</button>
+
+
+
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+                    alt="Audifono 2" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>WH-CH520</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 400</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha">Añadir al carrito</button>
+
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="https://promart.vteximg.com.br/arquivos/ids/769273-1000-1000/image-12e5169ccc964a4da18813c9045fdb4e.jpg?v=637496878856170000"
+                    alt="Audifono 3" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Logitech G733</h2> 
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://promart.vteximg.com.br/arquivos/ids/769273-1000-1000/image-12e5169ccc964a4da18813c9045fdb4e.jpg?v=637496878856170000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/123941138_01/w=800,h=800,fit=pad"
+                    alt="Audifono 4" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Redragon X Wireless H510</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 250</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/123941138_01/w=800,h=800,fit=pad">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/8502218-1000-1000/image-1b6ff92b320c4615a0de89312fdffe02.jpg?v=637870299724630000"
+                    alt="Audifono 5" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Beats Studio3 Wireless</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 320</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://oechsle.vteximg.com.br/arquivos/ids/8502218-1000-1000/image-1b6ff92b320c4615a0de89312fdffe02.jpg?v=637870299724630000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="https://minisope.vtexassets.com/arquivos/ids/190063/Aud-fonos-de-diadema-de-cable-gris-negro-Miniso-1-4903.jpg?v=637867965680370000"
+                    alt="Audifono 6" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Audifonos Miniso</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://minisope.vtexassets.com/arquivos/ids/190063/Aud-fonos-de-diadema-de-cable-gris-negro-Miniso-1-4903.jpg?v=637867965680370000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="https://hiraoka.com.pe/media/catalog/product/1/2/129222_-_am-20bt-n_anc_v1.jpg"
+                    alt="Audifono 7" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> Miray AM 20 BT</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://hiraoka.com.pe/media/catalog/product/1/2/129222_-_am-20bt-n_anc_v1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="https://promart.vteximg.com.br/arquivos/ids/7608873-1000-1000/imageUrl_1.jpg?v=638352530443170000"
+                    alt="Audifono 8" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>Razer V3 RGB </h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://promart.vteximg.com.br/arquivos/ids/7608873-1000-1000/imageUrl_1.jpg?v=638352530443170000">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="producto">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/16828452-1000-1000/imageUrl_1.jpg?v=638359602571670000"
+                    alt="Audifono 9" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> Asus Rog Delta</h2>
+                <p>Descripción breve del Audifono.</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://oechsle.vteximg.com.br/arquivos/ids/16828452-1000-1000/imageUrl_1.jpg?v=638359602571670000">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/carrito.js"></script>
+    
+<!-- Modal -->
+<div id="modal" class="modal">
+    <span id="cerrar-modal" class="cerrar">&times;</span>
+    <img id="modal-img" class="modal-content" alt="Imagen del Producto">
+</div>
+
+
+</body>
+
+</html>

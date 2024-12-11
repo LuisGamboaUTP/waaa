@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zapatillas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Archivo CSS personalizado -->
+<link rel="stylesheet" href="estilos/styles.css">
+<!-- Fuente Roboto -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="estilos/CategoriaEstilos.css">
+</head>
+
+<body>
+
+    <!-- Navbar Principal -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+            <div class="shop">
+                <select aria-describedby="searchDropdownDescription"
+                    class="nav-search-dropdown searchSelect nav-progressive-attribute nav-progressive-search-dropdown"
+                    id="searchDropdownBox" name="url" title="Buscar en" onchange="redirectToCategory()">
+                    <option value="" disabled selected>zapatillas</option>
+                    <option value="celulares.html">Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+
+                    <option value="televisores.html">Televisores</option>
+                    <option value="limpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+            <div class="advance">
+                <p>Avanzado</p>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="right-section">
+            <ul class="menu">
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+
+                            <!-- AQUI SE VISUALIZA TODO LO QUE ESTA EN CARRITO LUEGO DE DARLE CLICK AL ICON CARRITO -->
+
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+           
+
+
+        </ul>
+    </nav>
+    <!-- Contenido Principal con Cuadrícula de Productos -->
+    <main class="main-content">
+        <h1>Búsqueda de Zapatillas</h1>
+
+        <hr>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="https://tekos.pe/wp-content/uploads/2023/12/H06301-DERECHA.jpg"
+                    alt="Zapatilla 1" class="producto-img" onclick="abrirModal(this.src)">
+                <h2> ADIDAS TENSAUR SPORT </h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://assets.adidas.com/images/w_600,f_auto,q_auto/aa53a0a800c846abb44aae8a00367e1d_9366/Zapatillas_Tensaur_Sport_Training_Cierre_de_Cordones_Blanco_GW6422_01_standard.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://dojiw2m9tvv09.cloudfront.net/27230/product/dn3577-002-20395.jpg" alt="zapatilla 2" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>NIKE COURT VISION MID </h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 400</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://dojiw2m9tvv09.cloudfront.net/27230/product/dn3577-002-20395.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="https://chelseaio.vtexassets.com/arquivos/ids/508585-800-auto?v=638533856767830000&width=800&height=auto&aspect=true"
+                    alt="zapatilla 3" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>PUMA 180 UNISEX</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 300</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://chelseaio.vtexassets.com/arquivos/ids/508585-800-auto?v=638533856767830000&width=800&height=auto&aspect=true">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="imagenes_categoria/balance zaaps.webp"
+                    alt="zapatilla 4" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>NEW BALANCE URBANA</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 250</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="imagenes_categoria/balance zaaps.webp">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="https://ss237.liverpool.com.mx/xl/1131822886.jpg"
+                    alt="zapatilla 5" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>DC SHOES HOMBRE</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 320</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://bigheadstores.com/cdn/shop/files/ADYS100765-XSBW_2_baa7b506-9659-4d02-a1a6-7059ccab1abc.jpg?v=1715634646">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="imagenes_categoria/van school.webp"
+                    alt="zapatilla 6" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>VANS OLD SKOOL</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://thebox.com.pe/cdn/shop/files/VN0A7Q5M6BT_ALT1_1500x.jpg?v=1692637873">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="https://i.ebayimg.com/thumbs/images/g/bSkAAOSwNo1mflw6/s-l1200.jpg" alt="zapatilla 7"
+                    class="producto-img" onclick="abrirModal(this.src)">
+                <h2> REEBOK</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://i.ebayimg.com/thumbs/images/g/bSkAAOSwNo1mflw6/s-l1200.jpg">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.211252/1500x1500/6529C89843F98-M-Ultra-111-Wp.webp"
+                    alt="zapatilla 8" class="producto-img" onclick="abrirModal(this.src)">
+                <h2>THE NORTH FACE OUTDOOR</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.211252/1500x1500/6529C89843F98-M-Ultra-111-Wp.webp">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="producto">
+                <img src="https://exclusiveshopperu.com/wp-content/uploads/Jordan-1-Mid-Light-Smoke-Grey-1.jpg" alt="zapatilla 9"
+                    class="producto-img" onclick="abrirModal(this.src)">
+                <h2> JORDAN RETRO 1 MID</h2>
+                <p>Descripción breve de la Zapatilla .</p>
+                <p class="precio">Precio: S/ 450</p>
+                <button class="btn-add-to-cart" data-nombre="Producto 1" data-precio="29.99" data-img="https://smartmoveperu.com/wp-content/uploads/2023/12/DQ8418-071-1.jpg">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="ayuda.html">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToCategory(select) {
+            const selectedCategory = select.value;
+            if (selectedCategory) {
+                window.location.href = selectedCategory;
+            }
+        }
+    </script>
+    <script src="javascript/javascript.js"></script>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img id="modal-img" class="modal-content" alt="Imagen del Producto">
+    </div>
+</body>
+
+</html>
