@@ -1,0 +1,134 @@
+/* Estilos para pantallas con un ancho mínimo de 767px */
+@media only screen and (min-width: 767px) {
+    #main-content.Buscador-Home {
+        height: 250px;
+    }
+}
+
+/* Estilo base para #main-content.Buscador-Home */
+#main-content.Buscador-Home {
+    margin-bottom: 0;
+}
+
+/* Estilo para la clase .hero */
+.hero {
+    background-image: url("https://ripleyperu.zendesk.com/hc/theming_assets/01HZH6Z1E5KCA3WBX3DSQBVQS8");
+
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilos globales para todos los elementos */
+* {
+    box-sizing: border-box;
+}
+
+.hero-inner {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin: 0 auto;
+}
+.search-icon.homePage {
+    top: 88%;
+}
+.search-icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    color: #777;
+}
+.search{
+    position: relative;
+}
+.search-full input[type="search"] {
+    border: 1px solid #fff;
+}
+
+.search input[type="search"] {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #666;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.Categorias-Home {
+    padding-top: 20px;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.Categorias-Home section.categories li.blocks-item.whatsapp, .Categorias-Home section.categories li.blocks-item.covid-19, .Categorias-Home section.categories li.blocks-item.mensaje-directo {
+    border: none;
+}
+@media (min-width: 768px) {
+    .blocks-item {
+        margin: 0 15px 30px;
+    }
+}
+
+.blocks-item {
+    border: 1px solid rgba(89, 39, 133, 0.82);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgba(89, 39, 133, 0.82);
+    display: flex;
+    flex: 1 0 340px;
+    margin: 0 0 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+a.blocks-item-link {
+    padding: 20px 30px 20px 105px;
+}
+
+.blocks-item-link {
+    color: rgba(89, 39, 133, 0.82);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+a {
+    color: rgba(139, 54, 255, 1);
+    text-decoration: none;
+}
+
+a.blocks-item-link .blocks-item-title {
+    text-align: left;
+    line-height: 24px;
+}
+
+.blocks-item-title {
+    font-size: 25px;
+}
+
+a.blocks-item-link .blocks-item-description {
+    text-align: left;
+}
+
+.blocks-item-description:not(:empty) {
+    margin-top: 10px;
+}
+

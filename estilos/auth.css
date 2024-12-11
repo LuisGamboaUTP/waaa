@@ -1,0 +1,207 @@
+/* auth.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://i.postimg.cc/FR2vpqbG/black-aesthetic-mountains-4k-9k.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #090909; /* Cambia #007bff por el color que desees */
+}
+
+.input-icon {
+  position: relative;
+
+}
+
+.input-icon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 90%;
+  padding: 12px 12px 12px 40px; /* Ajusta padding para el icono */
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #076b07, #24d224);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #5a0da6, #1e66d3);
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+  .form-container {
+      width: 90%;
+      margin: 20px auto;
+  }
+}
+
+/* auth.css */
+
+/* ... el resto de tu código CSS ... */
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+}
+
+.google {
+  background-color: #db4437; /* Color de Google */
+}
+
+.facebook {
+  background-color: #3b5998; /* Color de Facebook */
+}
+
+/* Icono dentro del botón */
+.social-btn i {
+  margin-right: 8px; /* Espaciado entre el icono y el texto */
+}
+/* auth.css */
+
+/* ... el resto de tu código CSS ... */
+
+.password-strength {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.strong {
+  color: green;
+}
+
+.medium {
+  color: orange;
+}
+
+.weak {
+  color: red;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+.back-home {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none; /* Eliminar el subrayado del enlace */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.back-home:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+.back-home:focus {
+  outline: none; /* Eliminar el contorno del enlace cuando está enfocado */
+}
+
+.back-home i {
+  margin-right: 8px; /* Si decides añadir un icono, espaciado */
+}

@@ -1,0 +1,956 @@
+/* Añadir al inicio de tu CSS */
+* {
+    box-sizing: border-box;
+    /* Incluir padding y borde en el tamaño total */
+}
+
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    /* Evita desplazamiento horizontal */
+}
+
+/* Navbar principal */
+.navbar2 {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye espacio entre izquierda y derecha */
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    /* Para posicionar el menú desplegable en móviles */
+    width: 100%;
+    height: 60px;
+    /* Aumentado de 40px a 60px */
+    color: #f0f0f0;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Espaciado entre elementos */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Espaciado entre elementos */
+}
+
+.logo {
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espaciado a la derecha, si es necesario */
+}
+
+
+.h1 .w3-tag {
+    margin-right: 5px;
+    font-size: 24px;
+    /* Ajusta según sea necesario */
+}
+
+/* Menú desplegable de categorías */
+.shop select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Barra de búsqueda */
+.inputbox input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Añadir efecto de transform */
+}
+
+.btn button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    /* Levantar ligeramente el botón */
+}
+
+/* Opción de búsqueda avanzada */
+.advance p {
+    margin: 0;
+    padding: 5px 10px;
+    /* Espaciado interno */
+    font-size: 14px;
+    /* Tamaño de fuente */
+    cursor: pointer;
+    color: #f0f0f0;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.advance p:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Fondo al pasar el ratón */
+}
+
+/* Menú principal */
+.right-section .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    /* Espaciado entre elementos */
+}
+
+.right-section .menu li {
+    position: relative;
+    /* Para posicionar el submenú */
+}
+
+.right-section .menu li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 8px 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.right-section .menu li a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+/* Submenú */
+.right-section .menu .sub-menu {
+    display: none;
+    /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    /* Justo debajo del elemento padre */
+    left: -50px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.right-section .menu .sub-menu li {
+    padding: 0;
+}
+
+.right-section .menu .sub-menu li a {
+    padding: 8px 16px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.right-section .menu .sub-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+/* Mostrar submenú al pasar el ratón */
+.right-section .menu li:hover .sub-menu {
+    display: block;
+}
+
+/* Iconos en los enlaces que tienen submenú */
+.right-section .menu>li.menu-item-has-children>a>i.fa-angle-down {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Iconos */
+.fa-bell,
+.fa-cart-shopping {
+   
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative; /* Necesario para el posicionamiento del contenedor */
+    
+}
+
+/* Navbar de categorías */
+.navbar3 {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #ccc;
+}
+
+.display {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    /* Ajustado para evitar desbordamiento */
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.display li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.display li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.display li a:hover {
+    background-color: #0056b3;
+}
+
+/* Sección hero */
+.herosection {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+/* Favoritos */
+.fav1 {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.fav1 h1 {
+    margin-bottom: 10px;
+}
+
+.btn1 button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn1 button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.footer-section li a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    /* Reducir el tamaño de la fuente */
+    color: #888;
+    /* Colorear más claro */
+}
+
+/* Menú Hamburguesa */
+.hamburger-menu {
+    display: none;
+    /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 24px;
+    /* Tamaño del icono */
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar2 {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        /* Permite que la altura se ajuste al contenido */
+    }
+
+    .left-section,
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+        /* Reducido para pantallas pequeñas */
+    }
+
+    /* Menú principal */
+    .right-section .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        /* Oculto por defecto en móviles */
+        gap: 10px;
+        /* Espaciado entre elementos */
+    }
+
+    .right-section .menu.active {
+        display: flex;
+    }
+
+    /* Submenús */
+    .right-section .menu .sub-menu {
+        position: static;
+        /* Posición estática en móviles */
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .right-section .menu .sub-menu li a {
+        padding-left: 20px;
+        /* Indentación para submenús */
+    }
+
+    /* Mostrar el botón de menú hamburguesa */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Navbar de categorías */
+    .navbar3 .display {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar3 .display li {
+        margin: 5px 0;
+    }
+}
+
+/* Estilo de la sección de categorías */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 100px; /* Ajusta el tamaño según tu preferencia */
+    height: 100px; /* Ajusta el tamaño según tu preferencia */
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    background-color: #f0f0f0; /* Fondo para simular el círculo */
+    object-fit: cover; /* Mantiene la proporción y cubre el área */
+    border: 3px solid #007BFF; /* Borde azul alrededor de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s; /* Efecto de transición suave */
+}
+.category img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+    padding: 0 5px;
+    /* Añadir un poco de padding lateral */
+}
+
+/* Estilo del carrusel */
+.carousel {
+    padding: 20px;
+}
+
+.carousel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    position: relative; /* Asegura que las flechas se ubiquen dentro del contenedor */
+}
+
+.product {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+    /* Para el porcentaje de descuento */
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Asegura que las imágenes mantengan proporciones sin distorsión */
+}
+
+.name {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+}
+
+.current-price {
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.rating {
+    font-size: 14px;
+    color: #f39c12;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones del carrusel */
+.prev,
+.next {
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.product img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px;
+    /* Fija la altura deseada */
+    object-fit: cover;
+    /* Recorta la imagen si es necesario para llenar el espacio */
+    border-radius: 4px;
+    /* Añade un borde redondeado si lo deseas */
+}
+
+.product img {
+    width: 100%;
+    /* Ajusta la imagen para que ocupe el 100% del contenedor */
+    height: 200px;
+    /* Establece una altura fija para todas las imágenes */
+    object-fit: cover;
+    /* Recorta la imagen si es necesario para llenar el espacio sin distorsión */
+    border-radius: 4px;
+    /* Bordes redondeados opcionales */
+}
+
+.categories-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+}
+
+.category-card h3 {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Grid-module_row__nGdLv {
+    display: flex;
+    width: 100%;
+    margin: 0 -15px;
+}
+
+.grid-card {
+    position: relative;
+    flex: 1 1 30%;
+    /* Ajusta el ancho según necesites */
+    margin: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lazyload-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid {
+    margin: 0 auto;
+    /* Centra el contenedor */
+    padding: 0 15px;
+    /* Espaciado en los lados */
+    max-width: 1200px;
+    /* Máximo ancho del contenedor */
+}
+
+.Grid-module_row__nGdLv {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se alineen en varias filas */
+    justify-content: space-between;
+    /* Espacia las tarjetas */
+}
+
+.grid-card {
+    margin: 10px;
+    /* Espaciado entre las tarjetas */
+    flex: 1 1 calc(33.33% - 20px);
+    /* Ancho de las tarjetas (3 en fila con espacio) */
+    box-sizing: border-box;
+    /* Incluye el padding y border en el tamaño total */
+}
+
+@media (max-width: 768px) {
+    .grid-card {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 en fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-card {
+        flex: 1 1 100%;
+        /* 1 en fila en pantallas pequeñas */
+    }
+}
+
+/* styles.css */
+
+/* Estilos generales para el body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Estilo para el main */
+main {
+    flex: 1; /* Permite que el main crezca para llenar el espacio disponible */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el footer */
+.footer {
+
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+
+.carrito-vacio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    margin-top: 20px;
+}
+
+/* Estilos del icono del carrito */
+.carrito-vacio .carrito-icono {
+    font-size: 50px; /* Tamaño del icono */
+    color: black; /* Color del icono */
+    margin-bottom: 20px;
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    position: relative; /* Necesario para el posicionamiento del contenedor */
+}
+
+.carrito-vacio p {
+    font-size: 18px;
+    color: #333; /* Texto en gris oscuro */
+    margin-bottom: 10px;
+}
+
+.carrito-vacio .btn-iniciar-sesion {
+    background-color: black; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.carrito-vacio .btn-iniciar-sesion:hover {
+    background-color: #e65c00; /* Color al pasar el ratón */
+   
+}
+
+.carrito-vacio .registrate {
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+
+.carrito-vacio .registrate a {
+    color: blue; /* Color del enlace */
+    text-decoration: none;
+}
+
+.carrito-vacio .registrate a:hover {
+    text-decoration: underline;
+}
+
+.nav-card{
+    display: auto;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border-bottom: solid thin #e1e1e1;
+    
+}
+
+
+.vaciar_carrito {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    
+    border: solid thin #e1e1e1;
+    color: #494848;
+}
+
+
+
+
+/* Estilos para el contenedor que se mostrará al pasar el cursor */
+.carrito-vacio .contenedor-carrito {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionamiento absoluto respecto al icono */
+    top: 60px; /* Ajusta la distancia del contenedor respecto al icono */
+    left: 0;
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Más espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    z-index: 10; /* Asegura que el contenedor esté encima del contenido */
+    width: 300px; /* Ajusta el ancho del contenedor (más grande) */
+    min-height: 150px; /* Altura mínima para hacerlo más visible */
+}
+/* Mostrar el contenedor cuando el usuario pasa el cursor sobre el icono o sobre el contenedor */
+
+.contenedor-carrito:hover {
+    display: block; /* Muestra el contenedor cuando el cursor está sobre el icono o el contenedor */
+    opacity: 1; /* Asegura que el contenedor sea visible */
+}
+
+/* Estilos para el icono del carrito */
+.carrito-icono {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative; /* Necesario para el posicionamiento del contenedor */
+}
+
+/* Contenedor del carrito */
+.contenedor-carrito {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Lo coloca debajo del icono */
+    top: 35px; /* Ajusta la distancia */
+    right: 0;
+    width: 415px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+
+
+/* Ajuste adicional al contenedor del carrito (con los productos) */
+.buy-card {
+    padding: 10px 0; /* Espaciado dentro del carrito */
+    width: 400px;
+    height: 600px;
+}
+
+.nav-card {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.nav-card li {
+    margin-bottom: 10px; /* Espaciado entre los elementos del carrito */
+    color: black; /* Color de las letras */
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem; /* Tamaño de las letras */
+}
+
+/* Cuando el carrito tiene la clase 'mostrar', se hace visible */
+.contenedor-carrito.mostrar {
+    display: block;
+    opacity: 1;
+}
+
+/* Asegúrate de que los productos estén apilados verticalmente */
+.lista_de_productos {
+    display: flex; /* Cambio a bloque para apilar verticalmente */
+    text-align: center; /* Alineación de texto a la izquierda */
+    padding: 10px 0;
+    border-top: solid thin gray;
+    width: 390px;
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+.lista_de_productos img{
+    width: 100px;
+    vertical-align: middle; /* Alineación vertical de las imágenes */
+
+}
+
+.lista_de_productos p:nth-child(3){
+    padding-left: 20px;
+}
+
+.lista_de_productos p:nth-child(2){
+    padding-left: 0px;
+}
+
+.lista_de_productos p:nth-child(4){
+    padding-left: 50px;
+}
+
+.lista_de_productos p:nth-child(5){
+    padding-left: 30px;
+}
+
+.lista_de_productos p:last-child span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+}
+/* Estilo para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;  /* Centra la imagen horizontalmente */
+    align-items: center;      /* Centra la imagen verticalmente */
+    z-index: 1000;            /* Asegura que el modal esté encima de otros elementos */
+}
+
+/* Estilo para la imagen dentro del modal */
+.modal img {
+    max-width: 90%;           /* Limita el ancho máximo de la imagen */
+    max-height: 90%;          /* Limita la altura máxima de la imagen */
+    object-fit: contain;      /* Ajusta la imagen manteniendo su proporción */
+}
+
+/* Estilos de la sección de Canales de Atención */
+.canales-atencion {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.canales-atencion h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.canales {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.canal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.canal h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.canal p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.canal a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.canal a:hover {
+    text-decoration: underline;
+}
+
+.canal .btn-chat {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.canal .btn-chat:hover {
+    background-color: #128c7e;
+}
+
+.canal i {
+    font-size: 2rem;
+    color: #007bff;
+}

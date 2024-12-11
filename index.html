@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/CategoriaEstilos.css">
+
+    <!-- Fuente Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- Al final del <body> -->
+<script src="javascript/javascript.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+
+
+
+<body>
+
+    <!-- Navbar Principal con elementos integrados -->
+    <div class="navbar2">
+        <!-- Sección Izquierda: Logotipo y Búsqueda -->
+        <div class="left-section">
+            <!-- Logotipo -->
+            <div class="h1">
+                <a href="index.html">
+                    <img src="imagenes/logotransparente.png" alt="Logotipo de Luis" class="logo">
+                </a>
+            </div>
+
+
+            <!-- Menú desplegable de categorías -->
+            <div class="shop">
+                <select aria-describedby="searchDropdownDescription"
+                    class="nav-search-dropdown searchSelect nav-progressive-attribute nav-progressive-search-dropdown"
+                    id="searchDropdownBox" name="url" title="Buscar en" onchange="redirectToCategory()">
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <!-- Opción de selección inicial -->
+                    <option value="celulares.html">Celulares</option>
+                    <option value="teclados.html">Teclados Gaming</option>
+                    <option value="audifonos.html">Audífonos</option>
+                    <option value="laptops.html">Laptops Gamers</option>
+                    <option value="zapatillas.html">Zapatillas</option>
+                    <option value="televisores.html">Televisores</option>
+                    <option value="productosLimpieza.html">Productos de limpieza</option>
+                </select>
+            </div>
+
+
+
+            <!-- Barra de búsqueda -->
+            <div class="inputbox">
+                <input type="text" placeholder="Buscar Productos" />
+            </div>
+            
+
+            <!-- Botón de búsqueda -->
+            <div class="btn">
+                <button>Buscar</button>
+            </div>
+
+
+        </div>
+
+        <!-- Botón de menú hamburguesa (visible en móviles) -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Sección Derecha: Enlaces de la antigua navbar superior -->
+        <div class="right-section">
+            <ul class="menu">
+                <!-- Menú Desplegable para "Bienvenido!" -->
+                <li id="menu-item-bienvenido"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <a href="#">Bienvenido !</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-login" class="menu-item">
+                            <a href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li id="menu-item-register" class="menu-item">
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Otros enlaces -->
+                <li id="menu-item-ofertas" class="menu-item">
+                    <a href="#">Ofertas</a>
+                </li>
+                <li id="menu-item-ayuda" class="menu-item">
+                    <a href="ayuda.html">Ayuda & contacto</a>
+                </li>
+
+                <div>
+
+
+
+                </div>
+
+                <div class="right-section">
+                    <ul class="menu">
+                        <li id="menu-item-carrito" class="menu-item">
+                            <i class="fa-solid fa-cart-shopping carrito-icono"></i>
+                            <div class="contenedor-carrito">
+                                
+                                <div class="buy-card">
+                                    <ul class="nav-card">
+                                        
+                                        
+                                        <li></li>
+                                        
+                                    </ul>
+
+
+                        <li></li>
+                    </ul>
+
+                </div>
+        </div>
+
+        </li>
+        </ul>
+
+    </div>
+
+
+    </div>
+    </div>
+    <!-- Coloca el script al final del cuerpo del documento -->
+
+
+    <!-- Navbar de categorías -->
+    <nav class="navbar3">
+        <ul class="display">
+            <li><a href="audifonos.html">Audifonos</a></li>
+            <li><a href="teclados.html">Teclados</a></li>
+            <li><a href="zapatillas.html">Zapatillas</a></li>
+            <li><a href="televisores.html">Televisores</a></li>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="laptops.html">Laptops gamer</a></li>
+            <li><a href="productosLimpieza.html">Productos de limpieza</a></li>
+           
+
+
+        </ul>
+    </nav>
+
+    <!-- Aquí van las secciones de la navbar y demás contenido que ya tenías -->
+
+    <!-- aqui va el slider de imagenes de la web-->
+
+    <div class="contenedor">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/slider_televisores.png" class="d-block w-100" alt="imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/slider_celulares.png" class="d-block w-100" alt="imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/slider_zapatillas.png" class="d-block w-100" alt="imagen 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <h4 style="text-align: center;">¡Hasta 20% de ahorro en estas categorías!</h4>
+    <section class="categories">
+        <div class="category">
+            <img src="imagenes/iphone.jpg" alt="Celulares">
+            <p>Celulares</p>
+        </div>
+        <div class="category">
+            <img src="imagenes/tele (1).jpg" alt="Televisores y Camping">
+            <p>Televisores</p>
+        </div>
+        <div class="category">
+            <img src="imagenes/zapatillas (2).jpg" alt="Calzados">
+            <p>zapatillas</p>
+        </div>
+        <!-- Repite los demás íconos -->
+    </section>
+
+    <section class="carousel">
+        <h2>¡Lo mas visto en Celulares!</h2>
+        <div class="carousel-container">
+            <div class="product">
+
+                <img src="imagenes_categoria/s24 ultra.jpg" alt="Celular S24 ultra" onclick="abrirModal(this.src)" >
+                <p class="name">Samsung Galaxy S24 ultra</p>
+                <p class="price">
+                    <span class="current-price">S/ 4500.00</span>
+
+                </p>
+
+            </div>
+            <div class="product">
+
+                <img src="imagenes_categoria/iphone16promax.jpeg" alt="Celular Iphone 16" onclick="abrirModal(this.src)" >
+                <p class="name">Apple Iphone 16 Pro Max</p>
+                <p class="price">
+                    <span class="current-price">S/ 6500.00</span>
+
+                </p>
+
+            </div>
+            <!-- Repite los demás productos -->
+            <div class="product">
+
+                <img src="imagenes_categoria/huawei pura.jpg" alt="Celular Huawei  Pura" onclick="abrirModal(this.src)">
+
+                <p class="name">Huawei Pura 70 Ultra</p>
+                <p class="price">
+                    <span class="current-price">S/ 4200.00</span>
+
+                </p>
+            </div>
+            <div class="product">
+
+                <img src="imagenes_categoria/motorola edge 50 pro.jpg" alt="Celular motorola" onclick="abrirModal(this.src)">
+
+                <p class="name">Motorola Edge 50 Pro</p>
+                <p class="price">
+                    <span class="current-price">S/ 2300.00</span>
+
+                </p>
+            </div>
+            <div class="product">
+
+                <img src="imagenes_categoria/xiamo redmi.jpg" alt="Celular Redmi" onclick="abrirModal(this.src)">
+
+                <p class="name">Xiaomi Redmi Note 13 Pro</p>
+                <p class="price">
+                    <span class="current-price">S/ 1500.00</span>
+
+                </p>
+            </div>
+            <div class="product">
+
+                <img src="imagenes_categoria/Oppo Find X6 Pro.jpeg" alt="Celular Oppo" onclick="abrirModal(this.src)">
+
+                <p class="name">Oppo Find X6 Pro</p>
+                <p class="price">
+                    <span class="current-price">S/ 1400.00</span>
+
+                </p>
+            </div>
+            <div class="product">
+
+                <img src="imagenes_categoria/Google_Pixel_9_Pro.jpg" alt="Celular Google Google_Pixel_9_Pro" onclick="abrirModal(this.src)">
+
+                <p class="name">Google Pixel 9 Pro</p>
+                <p class="price">
+                    <span class="current-price">S/ 5600.00</span>
+
+                </p>
+            </div>
+            
+
+    </section>
+    
+
+    </section>
+    <!-- Nueva sección: Lo más visto en tecnología -->
+    <section class="carousel">
+        <h2>¡Lo más visto en Tecnología!</h2>
+        <div class="carousel-container">
+            
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61Wv-GVOmFL._AC_SL1500_.jpg" alt="Laptop Acer" onclick="abrirModal(this.src)">
+                <p class="name">Laptop Acer Aspire 5</p>
+                <p class="price">
+                    <span class="current-price">S/ 3200.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg"
+                    alt="MacBook Pro" onclick="abrirModal(this.src)">
+                <p class="name">Apple MacBook Pro M1</p>
+                <p class="price">
+                    <span class="current-price">S/ 8500.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/pe/lc27f391fhnxza/gallery/pe-27-essential-white-curved-monitor-with-the-deeply-immersive-viewing-experience-lc27f391fhnxza-540417122?$2052_1641_PNG$"
+                    alt="Monitor Samsung Curvo" onclick="abrirModal(this.src)">
+                <p class="name">Monitor Samsung Curvo 27"</p>
+                <p class="price">
+                    <span class="current-price">S/ 1200.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71TyGobdfQL._AC_SL1500_.jpgtegoria/teclado_logitech.jpg"
+                    alt="Teclado Logitech Mecánico" onclick="abrirModal(this.src)">
+                <p class="name">Teclado Logitech Mecánico</p>
+                <p class="price">
+                    <span class="current-price">S/ 500.00</span>
+                </p>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="https://promart.vteximg.com.br/arquivos/ids/769273-1000-1000/image-12e5169ccc964a4da18813c9045fdb4e.jpg?v=637496878856170000"
+                    alt="Audifonos Logitech " onclick="abrirModal(this.src)">
+                <p class="name">Audifonos Gaming Logitech G733 </p>
+                <p class="price">
+                    <span class="current-price">S/ 600.00</span>
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Nueva sección: Lo más visto en Zapatillas -->
+    <section class="carousel">
+        <h2>¡Lo más visto en Zapatillas!</h2>
+        <div class="carousel-container">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="https://i.ebayimg.com/thumbs/images/g/T~MAAOSwKGxmIJzA/s-l1200.jpg"
+                    alt="Adidas Forum Bold" onclick="abrirModal(this.src)">
+                <p class="name">Adidas Forum Bold</p>
+                <p class="price">
+                    <span class="current-price">S/ 429.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="https://f.fcdn.app/imgs/847c74/www.zooko.com.uy/zoo/0781/original/catalogo/NKFD6923-100-1/1920-1200/nike-dunk-low-white.jpg"
+                    alt="NIKE DUNK LOW - White" onclick="abrirModal(this.src)">
+                <p class="name">NIKE DUNK LOW - White</p>
+                <p class="price">
+                    <span class="current-price">S/ 620.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="https://mercury.vtexassets.com/arquivos/ids/1477514/shopStar-0.jpg?v=637261230010900000"
+                    alt="ZAPATILLAS CONVERSE CHUCK TAYLOR ALL STAR" onclick="abrirModal(this.src)">
+                <p class="name">ZAPATILLAS CONVERSE </p>
+                <p class="price">
+                    <span class="current-price">S/ 250.00</span>
+                </p>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="https://thebox.com.pe/cdn/shop/files/MR530SG-W-0SG-1_1000x.webp?v=1731446448"
+                    alt="New Balance 530" onclick="abrirModal(this.src)">
+                <p class="name">New Balance 530</p>
+                <p class="price">
+                    <span class="current-price">S/ 500.00</span>
+                </p>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDL8RS3WW512/500x500/66A3C7ACBBE65-Zapatilla-Unisex-Ni-o-Skateboarding-Ska0015n0104.webp"
+                    alt="Zapatilla NEW ATHLETIC  " onclick="abrirModal(this.src)">
+                <p class="name">Zapatilla NEW ATHLETIC </p>
+                <p class="price">
+                    <span class="current-price">S/ 420.00</span>
+                </p>
+            </div>
+             <!-- Producto 6 -->
+             <div class="product">
+                <img src="imagenes_categoria/508585-800-umas negra.webp"
+                    alt="Zapatilla NEW ATHLETIC  " onclick="abrirModal(this.src)">
+                <p class="name">Zapatilla Van old  </p>
+                <p class="price">
+                    <span class="current-price">S/ 420.00</span>
+                </p>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <h2>Novedades 2024</h2>
+        <div class="categories-container">
+            <div class="category-card">
+                <img src="imagenes_categoria/banner audifonos (2).png" alt="Audifonos">
+                <h3>Audifonos</h3>
+            </div>
+            <div class="category-card">
+                <img src="imagenes_categoria/banner celular.png" alt="Celulares">
+                <h3>Celulares</h3>
+            </div>
+            <div class="category-card">
+                <img src="imagenes_categoria/banner zapatillas.png" alt="Zapatillas">
+                <h3>Zapatillas</h3>
+            </div>
+            <div class="category-card">
+                <img src="imagenes_categoria/banner tecnologia.png" alt="tecnologia">
+                <h3>tecnologia</h3>
+            </div>
+        </div>
+    </section>
+    <div class="grid Grid-module_grid-component__FjSqF col-md-12 px-md-0 py-2 py-md-4" id="main-Grid">
+        <div class="Grid-module_row__nGdLv">
+
+            <!-- Primer elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_full__E7TOj" id="grid-card-0">
+                
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/blt268f01c7c24399a4/661d58e61e527a5df73b8c16/mc-piso-1-audio.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="Audio" class="d-none d-md-block">
+                        </picture>
+                    </div>
+               
+            </div>
+
+            <!-- Segundo elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_half__5EVLw" id="grid-card-1">
+               
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/bltceddf45db94f091e/661d58e5b1717a496f1040f9/mc-piso-1-smartwatch.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="SmartWatch" class="d-none d-md-block">
+                        </picture>
+                    </div>
+                
+            </div>
+
+            <!-- Tercer elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_half__5EVLw" id="grid-card-2">
+                
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/blt4da551487de60e0f/661d58e69cbc2a557ea9c7ef/mc-piso-1-tablet.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="Tablets" class="d-none d-md-block">
+                        </picture>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="Grid-module_row__nGdLv">
+
+            <!-- Cuarto elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_half__5EVLw" id="grid-card-3">
+                
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/blta1538581539152d0/661d58ef3c817d03f8e890ee/mc-piso-2-videojuegos.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="Videojuegos" class="d-none d-md-block">
+                        </picture>
+                    </div>
+                
+            </div>
+
+            <!-- Quinto elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_half__5EVLw" id="grid-card-4">
+                
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/blta58221b4e82f0415/661d58ee9cbc2a1989a9c7f3/mc-piso-2-gamer.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="Gamer" class="d-none d-md-block">
+                        </picture>
+                    </div>
+               
+            </div>
+
+            <!-- Sexto elemento de la cuadrícula -->
+            <div class="grid-card Grid-module_cell__3SVLB Grid-module_full__E7TOj" id="grid-card-5">
+                
+                    <div class="lazyload-wrapper">
+                        <picture>
+                            <source
+                                srcset="https://images.falabella.com/v3/assets/blt9ac1b5ba571392f3/blt49601f2d3d718d8e/661d58ef4906450de8039ca4/mc-piso-2-camaras-seguridad.jpg?disable=upscale&amp;auto=webp&amp;quality=70&amp;width=1280"
+                                media="(min-width: 720px)" type="image/webp">
+                            <img alt="Cámaras de seguridad" class="d-none d-md-block">
+                        </picture>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Favoritos -->
+    <div class="fav1">
+        <div class="fav">
+            <h1>Todos tus coleccionables favoritos aquí</h1>
+            <p>No se necesitan poderes especiales para encontrar lo que buscas en Luis xd.</p>
+        </div>
+        <div class="fav2">
+            <div class="btn1">
+                <button>Compra ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Sección de Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Teléfono: +51 989999999</a></li>
+                    <li><a href="#">Correo: contacto@tienda.com</a></li>
+                    <li><a href="#">Ubicación: Av. Central 123</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección de Información -->
+            <div class="footer-section">
+                <h3>Gestiona tu Cuenta</h3>
+                <ul>
+                    <li><a href="MiCuenta.html">Mi cuenta</a></li>
+                    <li><a href="MiCuenta.html">Registrate Ahora</a></li>
+                    <li><a href="MiCuenta.html">Recuperar Contraseña</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li> <!-- YouTube -->
+                </ul>
+            </div>
+
+            <!-- Sección de Soporte -->
+            <div class="footer-section">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="ayuda.html">Atención al Cliente</a></li>
+                    <li><a href="#">Chat en Vivo</a></li> <!-- Opción de chat en vivo -->
+                    <li><a href="#">Centros de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2024 Tu Tienda - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+        <!-- Modal -->
+<div id="modal" class="modal">
+    <span id="cerrar-modal" class="cerrar">&times;</span>
+    <img id="modal-img" class="modal-content" alt="Imagen del Producto">
+</div>
+    
+</body>
+
+</html>
